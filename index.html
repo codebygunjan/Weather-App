@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name.." spellcheck="false" id="inputText"/>
+        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="weather">
+        <img
+          src="https://cdnl.iconscout.com/lottie/premium/thumb/rain-4013232-3317819.gif"
+          alt="rain image"
+          class="weather-icon"
+          id="weatherIcon"
+        />
+        <h1 class="temp" id="temp">22°c</h1>
+        <h2 class="city" id="city">Jaipur</h2>
+        <div class="details">
+          <div class="col">
+            <i class="fa-solid fa-temperature-high"></i>
+            <p>Humidity</p>
+            <p class="humidity" id="humidity">65%</p>
+          </div>
+
+            <p id="desc">Rain</p>
+
+          <div class="col">
+            <i class="fa-solid fa-wind"></i>
+            <p>Wind-speed</p>
+            <p class="wind" id="wind" >10km/h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
